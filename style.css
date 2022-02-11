@@ -1,0 +1,72 @@
+body {
+  background-color: #04395e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel {
+  max-width: 800px;
+  position: relative;
+  margin: 5rem auto;
+}
+
+.carousel h1 {
+  color: #ebf3fe;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: #ecdac1;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.carousel .carousel-actions button:hover {
+  background-color: #304a3d;
+  color: #fff;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
